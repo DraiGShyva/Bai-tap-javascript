@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="eingabe" value="Hallo1" id="e1">
+    <input type="text" name="eingabe" value="Hallo2" id="e2">
+    <input type="text" name="eingabe" value="Hallo3" id="e3">
+
+    <p id="p1">Hello world!</p>
+</body>
+
+<script type="text/javascript">
+    //1
+    document.body.style.background = '#303030';
+
+    //2
+    var inputs = document.getElementsByName("eingabe");
+    for (var i = 0; i < inputs.length; i++)
+        inputs[i].value = "Olla" + i;
+    document.getElementById("e1").value = "Toll!";
+    document.getElementById("e1").style.color = "red";
+
+    //3
+    document.getElementById("p1").innerHTML = "New text!";
+</script>
+
+</html>

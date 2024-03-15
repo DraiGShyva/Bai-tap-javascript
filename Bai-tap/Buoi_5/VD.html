@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<body>
+    <div id="div1">
+    </div>
+</body>
+
+<script>
+    // sửa dữ liệu bằng id
+    document.getElementById("div1").innerHTML = "<h1>Đây là thẻ h1</h1> <a>Đây là thẻ a</a>";
+
+    // sửa dữ liệu bằng tag
+    document.getElementsByTagName("a")[0].innerHTML = "Đây là thẻ aaaaaa";
+
+    // thêm thẻ mới
+    document.getElementById("div1").appendChild(document.createElement("p")).innerHTML = "Đây là thẻ p";
+
+</script>

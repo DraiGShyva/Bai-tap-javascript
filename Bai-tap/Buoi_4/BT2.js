@@ -5,7 +5,7 @@ class Pet {
     }
 
     introduce() {
-        console.log(`Tôi tên là ${this.name}.`);
+        console.log(`My name is ${this.name}.`);
     }
 
     talk() {
@@ -20,11 +20,11 @@ class Dog extends Pet {
     }
 
     getGeneus() {
-        console.log(`Tôi là động vật ${this.geneus}.`);
+        console.log(`I am an animal of ${this.geneus}.`);
     }
 }
 
-var becgie = new Dog(this.name = 'Becgie', this.animal_sounds = 'gâu gâu gâu!!!', this.geneus = 'có vú');
+var becgie = new Dog(this.name = 'Becgie', this.animal_sounds = 'Woof woof woof!!!', this.geneus = 'mammal');
 
 becgie.introduce();
 becgie.getGeneus();
