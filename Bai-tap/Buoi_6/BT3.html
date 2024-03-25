@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BT3</title>
+    <style type="text/css">
+        #countdown {
+            font-size: 50px;
+            text-align: center;
+            margin-top: 300px;
+        }
+    </style>
+    <link rel="stylesheet" href="animation.css">
+</head>
+
+<body>
+    <div id="countdown"></div>
+    <script type="text/javascript">
+        var i = 3;
+        var countdown = setInterval(function () {
+            document.getElementById('countdown').innerHTML = i;
+            i--;
+            if (i < 0) {
+                clearInterval(countdown);
+                document.getElementById('countdown').innerHTML = '<div class="pyro"><div class="before"></div><div class="after"></div></div>';
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>
