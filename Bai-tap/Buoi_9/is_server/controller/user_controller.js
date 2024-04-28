@@ -1,13 +1,4 @@
-const user = require('../config/user');
-
-exports.getAllUser = async (req, res) => {
-    try {
-        const users = await User.find();
-        res.status(200).json(orders);
-    } catch (err) {
-        res.status(500).json(err);
-    }
-}
+const User = require('../config/user');
 
 exports.getUser = async (req, res) => {
     try {
