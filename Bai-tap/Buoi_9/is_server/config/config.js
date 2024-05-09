@@ -1,3 +1,3 @@
-API_DB = 'mongodb://localhost:27017/c-commmon';
+MONGO_URI = 'mongodb://localhost:27017/c-common';
 
-module.exports = { API_DB };
+module.exports = { MONGO_URI };
